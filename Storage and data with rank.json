@@ -1,0 +1,9 @@
+{
+  "user": {
+    "id": "1",
+    "name": "Arnav Sharma",
+    "role": "owner",
+    "isAuthenticated": true
+  },
+  "message": "Welcome back, you have owner-level access."
+}

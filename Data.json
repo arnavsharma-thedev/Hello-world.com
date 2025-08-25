@@ -1,0 +1,54 @@
+{
+  "project_name": "Arnav's AI Tutor",
+  "version": "1.0",
+  "description": "An AI teaching code with personalized user data storage to provide a tailored learning experience. This code is a direct and efficient way to store information.",
+  "creator": "Arnav Sharma",
+  "user_data": {
+    "name": "Arnav Sharma",
+    "age": 8,
+    "birthday": "2016-09-02",
+    "interests": [
+      "coding",
+      "AI",
+      "quantum computing",
+      "challenges"
+    ],
+    "learning_style": "direct answers, short and detailed, hands-on",
+    "preferred_tools": [
+      "terminal",
+      "mtb editer"
+    ],
+    "super_level_challenge_status": "remembered"
+  },
+  "modules": {
+    "teaching_engine": {
+      "function": "delivers lessons based on user's interests and learning style",
+      "parameters": {
+        "lesson_topic": "string",
+        "complexity_level": "integer (1-10)",
+        "output_format": "string (e.g., 'direct', 'detailed', 'code_snippet')"
+      }
+    },
+    "data_storage": {
+      "function": "stores and updates user information",
+      "parameters": {
+        "user_id": "string",
+        "data_to_store": "json object"
+      }
+    },
+    "interaction_log": {
+      "function": "records and analyzes past conversations to improve future interactions",
+      "log_schema": {
+        "timestamp": "string",
+        "user_query": "string",
+        "ai_response": "string",
+        "user_feedback": "string (e.g., 'positive', 'negative', 'neutral')"
+      }
+    }
+  },
+  "goals": [
+    "To push the limits with each question",
+    "Provide first-class responses",
+    "Give super answers"
+  ]
+}

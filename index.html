@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSense AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="logo">CodeSense</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-page="news">
+                    <img src="images/news_icon.svg" alt="News Icon">
+                    <span>News</span>
+                </a>
+                <a href="#" class="nav-item" data-page="releases">
+                    <img src="images/releases_icon.svg" alt="Releases Icon">
+                    <span>Releases</span>
+                </a>
+                <a href="#" class="nav-item" data-page="ai">
+                    <img src="images/ai_icon.svg" alt="AI Icon">
+                    <span>AI Chat</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="app-header">
+                <h1>Coding News & Updates</h1>
+                <div class="user-profile">
+                    <img src="images/user_avatar.svg" alt="User Avatar">
+                </div>
+            </header>
+
+            <section id="news" class="page-section active">
+                <div class="loading-spinner"></div>
+                <div class="news-list">
+                    </div>
+            </section>
+
+            <section id="releases" class="page-section hidden">
+                <h2>GitHub Releases</h2>
+                <input type="text" id="repo-input" placeholder="Enter GitHub repo (e.g., torvalds/linux)">
+                <button id="fetch-releases-btn">Fetch Releases</button>
+                <div class="releases-list">
+                    </div>
+            </section>
+
+            <section id="ai" class="page-section hidden">
+                <h2>AI Coding Assistant</h2>
+                <div class="ai-chat-window">
+                    <div class="chat-log">
+                        <div class="ai-message">Hello! I can help with your coding questions.</div>
+                    </div>
+                    <form id="ai-chat-form" class="chat-input-form">
+                        <input type="text" id="user-input" placeholder="Ask me about coding news or a bug...">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
